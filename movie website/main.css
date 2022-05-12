@@ -1,0 +1,577 @@
+html{
+ scrollbehavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+/*--------------------------------------------------------------
+# Nav bar
+--------------------------------------------------------------*/
+.nav{
+    background-color: rgb(3, 3, 3);
+    overflow: hidden;
+    position: relative;
+}
+.nav a{
+    float: left;
+    margin-right: 1000px;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover{
+    background-color: #64ffda;
+    color: black;
+
+}
+.nav a.o {
+    background-color: #04aa6d;
+    color: white;
+}
+form{
+  margin-top: 15px;
+}
+input{
+    all: unset;
+    font: 16px system-ui;
+    color: rgb(0, 0, 0);
+    padding: 3px 5px;
+    background: white;
+}
+.o{
+    margin-top: 100px;
+}
+/*--------------------------------------------------------------
+# Nav bar End
+--------------------------------------------------------------*/
+
+ /*--------------------------------------------------------------
+#Category section
+--------------------------------------------------------------*/
+:root{  
+    --background-dark: #2d3548;  
+    --text-light: rgba(255,255,255,0.6);  
+    --text-lighter: rgba(255,255,255,0.9);  
+    --spacing-s: 8px;  
+    --spacing-m: 16px;  
+    --spacing-l: 24px;  
+    --spacing-xl: 32px;  
+    --spacing-xxl: 64px;  
+    --width-container: 800px;  
+   }  
+   *{  
+    border: 0;  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+   }  
+   html{  
+    height: 100%;  
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 14px;  
+   }  
+   body{  
+    height: 100%;
+      
+   }  
+   .hero-section{  
+    align-items: flex-start;  
+    background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);  
+    display: flex;  
+    min-height: 50%;  
+    justify-content: center;  
+    padding: var(--spacing-xxl) var(--spacing-l);  
+   }  
+   .card-grid{  
+    display: grid;  
+    grid-template-columns: repeat(1, 1fr);  
+    grid-column-gap: var(--spacing-l);  
+    grid-row-gap: var(--spacing-l);  
+    max-width: var(--width-container);  
+    width: 100%;  
+   }  
+   @media(min-width: 540px){  
+    .card-grid{  
+     grid-template-columns: repeat(2, 1fr);   
+    }  
+   }  
+   @media(min-width: 960px){  
+    .card-grid{  
+     grid-template-columns: repeat(4, 1fr);   
+    }  
+   }  
+   .card{  
+    list-style: none;  
+    position: relative;  
+   }  
+   .card:before{  
+    content: '';  
+    display: block;  
+    padding-bottom: 150%;  
+    width: 100%;  
+   }  
+   .card__background{  
+    background-size: cover;  
+    background-position: center;  
+    border-radius: var(--spacing-l);  
+    bottom: 0;  
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);  
+    left: 0;  
+    position: absolute;  
+    right: 0;  
+    top: 0;  
+    transform-origin: center;  
+    transform: scale(1) translateZ(0);  
+    transition:   
+     filter 200ms linear,  
+     transform 200ms linear;  
+   }  
+   .card:hover .card__background{  
+    transform: scale(1.05) translateZ(0);  
+   }  
+   .card-grid:hover > .card:not(:hover) .card__background{  
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);  
+   }  
+   .card__content{  
+    left: 0;  
+    padding: var(--spacing-l);  
+    position: absolute;  
+    top: 0;  
+   }  
+   .card__category{  
+    color: var(--text-light);  
+    font-size: 0.9rem;  
+    margin-bottom: var(--spacing-s);  
+    text-transform: uppercase;  
+   }  
+   .card__heading{  
+    color: var(--text-lighter);  
+    font-size: 1.9rem;  
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);  
+    line-height: 1.4;  
+    word-spacing: 100vw;  
+   }  
+.Text{
+    text-align: center;
+    color: rgb(0, 0, 0);  
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+ 
+ /*--------------------------------------------------------------
+#Movie section
+--------------------------------------------------------------*/
+body {
+    height: 100%;
+    width: 100%;
+    background: #e9e9e9;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #010b26;
+  }
+  
+  * {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  
+  .intro {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  h1, h2, h3, h4, h5, p {
+    font-weight: 400;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #6ABCEA;
+  }
+  
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .movie-card {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 315px;
+    margin: 2em;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .movie-header {
+    padding: 0;
+    margin: 0;
+    height: 367px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .manOfSteel {
+    background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg");
+    background-size: cover;
+  }
+  
+  .babyDriver {
+    background: url("57c10417-f1fd-494a-9ee3-458d8ca5d83e.jfif");
+    background-size: cover;
+  }
+  
+  .theDarkTower {
+    background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  
+  .bladeRunner2049 {
+    background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg");
+    background-size: cover;
+    background-position: 100% 80%;
+  }
+  .batman{
+      background: url("951698bf-6085-453c-b4c0-6050c8bb812d.jfif");
+      background-size: cover;
+
+  }
+  .Hitman{
+      background: url("The\ Hitmans\ Bodyguard\ Poster_\ ID_1510242.jfif");
+      background-size: cover;
+  }
+  .Tomb{
+      background: url("c301b9bb-f358-417d-aa74-6bffe3dc1f6f.jfif");
+      background-size: cover;
+  }
+  .rampage{
+      background: url("RAMPAGE\ MOVIE\ POSTER\ DS\ 27x40\ DWAYNE\ JOHNSON\ 2018\ Final\ Style\ One\ Sheet\ \ _\ eBay.jfif");
+      background-size: cover;
+  }
+  .Dune{
+      background: url("Dune.jfif");
+      background-size: cover;
+  }
+  .header-icon-container {
+    position: relative;
+  }
+  
+  .header-icon {
+    width: 100%;
+    height: 367px;
+    line-height: 367px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+    opacity: .85;
+  }
+  
+  .header-icon:hover {
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 74px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 1;
+  }
+  
+  .movie-card:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .movie-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+  }
+  
+  .movie-content-header, .movie-info {
+    display: table;
+    width: 100%;
+  }
+  
+  .movie-title {
+    font-size: 24px;
+    margin: 0;
+    display: table-cell;
+  }
+  
+  .movie-info {
+    margin-top: 1em;
+  }
+  
+  .info-section {
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .info-section:first-of-type {
+    text-align: left;
+  }
+  
+  .info-section:last-of-type {
+    text-align: right;
+  }
+  
+  .info-section label {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: .5em;
+    font-size: 9px;
+  }
+  
+  .info-section span {
+    font-weight: 700;
+    font-size: 11px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .movie-card {
+      width: 95%;
+      max-width: 95%;
+      margin: 1em;
+      display: block;
+    }
+  
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+  } 
+
+  
+ /*--------------------------------------------------------------
+#Ad section
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    background-color: #0e0e0e;
+    overflow-x: hidden;
+}
+
+button{
+    background: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.main-header{
+    color: lawngreen;
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.movie-slider{
+    position: relative;
+}
+
+.movie-slider::before{
+    content: '';
+    height: 438px;
+    width: 100px;
+    display: block;
+    background: linear-gradient(to right, black, transparent);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.movie-slider::after{
+    content: '';
+    height: 438px;
+    width: 100px;
+    display: block;
+    background: linear-gradient(to left, black, transparent);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.movie-list{
+    margin: 30px 0;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.movie-list::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}
+   
+.movie-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+.movie-list::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    outline: 1px solid slategrey;
+    border-radius: 50px;
+}
+
+.movie-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 182px;
+    box-shadow: 0px 5px 10px rgb(17, 17, 17);
+    cursor: pointer;
+    margin: 20px 15px;
+    position: relative;
+    transition: all 1s;
+}
+
+.movie-card:hover{
+    box-shadow: 0px 10px 20px #000000;
+    transform:  scale(1.08);
+    
+}
+
+.movie-poster{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.movie-info{
+    padding: 15px 10px;
+}
+
+.movie-title{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 38px;
+}
+
+.btn-watch{
+    font-weight: 700;
+    background-color: #005dff;
+    padding: 8px 44px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+<!--footer-->
+.container{
+    background: black;
+    margin-top: 20px;
+}
+.footer{
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.fist-1{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5bb;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.col-2{
+    flex-basis: 50%;
+    min-height: 300px;
+}
+.col-3{
+    flex: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-height: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
