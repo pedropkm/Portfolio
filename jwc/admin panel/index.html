@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jwc</title>
+</head>
+<body>
+<div class="overlay">
+<!-- LOGN IN FORM by Omar Dsoky -->
+<form >
+   <!--   con = Container  for items in the form-->
+   <div class="con">
+   <!--     Start  header Content  -->
+   <header class="head-form">
+      <h2>Log In</h2>
+      <img src="https://jhbchildwelfare.org.za/wp-content/uploads/2024/03/Website-JCW-Main-Logo-2024-300x120.jpg" style="width: 250px; margin-top: 20px;">
+   </header>
+   <!--     End  header Content  -->
+   <br>
+   <div class="field-set">
+     
+      <!--   user name -->
+         <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <!--   user name Input-->
+         <input class="form-input" id="txt-input" type="text" placeholder="@Email" name="email" >
+     
+      <br>
+           <!--   Password -->
+     <br>
+      <span class="input-item">
+        <i class="fa fa-key"></i>
+       </span>
+      <!--   Password Input-->
+      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" >
+     
+<!--      Show/hide password  -->
+     <span>
+        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+     </span>
+     
+     
+      <br>
+<!--        buttons -->
+<!--      button LogIn -->
+<button class="log-in" name ="submit"><a href = "https://leafy-marzipan-27ec1f.netlify.app/" onclick="login()"> Log In </a></button>
+   </div>
+   <a href = "https://cosmic-semifreddo-6b4539.netlify.app/" style="color: white;">Continue without signing in</a>
+  
+<!--   other buttons -->
+   <div class="other">
+<!--      Forgot Password button-->
+      <button class="btn submits frgt-pass"type="button" style="color: white;">Forgot Password</button>
+<!--     Sign Up button -->
+<!--         Sign Up font icon -->
+<!--      End Other the Division -->
+   </div>
+     
+<!--   End Conrainer  -->
+  </div>
+  
+  <!-- End Form -->
+</form>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
