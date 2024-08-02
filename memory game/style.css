@@ -1,0 +1,18 @@
+body{
+    background: rgb(251,63,63);
+    background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(77,160,168,1) 20%, rgba(67,252,88,1) 36%, rgba(252,229,70,1) 58%, rgba(252,70,223,1) 71%, rgba(252,70,70,1) 85%);
+}
+#grid{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#text{
+    font-weight: bold;
+    font-size: 2rem;
+}
