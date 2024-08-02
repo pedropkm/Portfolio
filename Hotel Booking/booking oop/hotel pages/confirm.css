@@ -1,0 +1,22 @@
+body{
+    color: white;
+    background: -webkit-linear-gradient(to right, #000428, #004e92);
+    background: linear-gradient(to right, #000428, #004e92);
+    display: grid;
+}
+
+li{
+    list-style-type:none;
+    font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+}
